@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="payment-form" action="">
+        <fieldset>
+          <legend>Step: 1 Your details</legend>
+          <div>
+            <label for="name">Name*</label>
+            <input
+              type="text"
+              name=""
+              id="name"
+              placeholder="enter your name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email*</label>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="example@domai.com"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              placeholder="111-222-3333"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+          </div>
+          <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Step: 2 Delivery address</legend>
+          <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="5" required></textarea>
+          </div>
+          <div>
+            <label for="postalCode">Post code</label>
+            <input type="text" id="postCode" />
+          </div>
+          <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="germany">Germany</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Step: 3 Card details</legend>
+          <div>
+            <label for="card">Card number</label>
+            <input type="number" name="card" id="card" />
+          </div>
+          <div>
+            <label for="security">Security code</label>
+            <input type="password" name="security" id="security" />
+          </div>
+          <div>
+            <label for="nameOnCard">Name on card</label>
+            <input
+              type="text"
+              id="nameOnCard"
+              placeholder="Exact name as on the card"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <button type="submit">Buy it!</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
